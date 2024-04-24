@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,10 +20,17 @@
   <header class="main-header">
 
     <a class="logo-img" href="index.html">
-      <img src="images/logo-img.png" width="33" height="38" alt="Логотип">
+      <picture>
+        <source media="(min-width: 1300px)" type="image/png" width="70" height="59" srcset="images/header-logo-desktop@1x.png 1x, images/header-logo-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" type="image/png" width="60" height="50" srcset="images/header-logo-tablet@1x.png 1x, images/header-logo-tablet@2x.png 2x">
+        <img src="images/header-logo-mobile@1x.png" srcset="images/header-logo-mobile@2x.png" width="33" height="38" alt="Логотип">
+      </picture>
     </a>
     <a class="logo-name" href="index.html">
-      <img src="images/logo-name.png" width="101" height="18" alt="CAT ENERGY">
+      <picture>
+        <source media="(min-width: 1300px)" type="image/png" width="118" height="21" srcset="images/header-logo-cat-energy@1x.png 1x, images/header-logo-cat-energy@2x.png 2x">
+        <img src="images/header-logo-cat-energy@1x.png" srcset="images/header-logo-cat-energy@2x.png" width="101" height="18" alt="CAT ENERGY">
+      </picture>
     </a>
 
     <nav class="main-nav">
@@ -41,10 +54,15 @@
 
   <main class="main-container">
 
-    <section class="main-hero">
-      <h1 class="main-hero__title">Функциональное питание для котов</h1>
-      <p class="main-hero__text">Занялся собой? Займись котом!</p>
-      <a class="main-hero__link button" href="#">Подобрать программу</a>
+    <section class="hero">
+      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <p class="hero__text">Занялся собой? Займись котом!</p>
+      <a class="hero__link button" href="#">Подобрать программу</a>
+      <picture>
+        <source media="(min-width: 1300px)" type="image/png" width="552" height="499"   srcset="images/index-hero-can-desktop@1x.jpg 1x, images/index-hero-can-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" type="image/png" width="709" height="609"   srcset="images/index-hero-can-tablet@1x.jpg 1x, images/index-hero-can-mobile@2x.jpg 2x">
+        <img class="hero__image" src="images/index-hero-can-mobile@1x.jpg" srcset="images/index-hero-can-mobile@2x.jpg" width="280" height="270" alt="Банка корма с курицей">
+      </picture>
     </section>
 
     <section class="preview">
@@ -96,8 +114,16 @@
         <dt class="example__item-number example__item-number--wide">15 000 руб.</dt>
         <dd class="example__item-description example__item-description--wide">Затраты на питание:</dd>
       </dl>
-      <div class="example__slider">
+      <div class="example__slider slider">
         <span class="visually-hidden">Слайдер с котиком</span>
+        <picture>
+          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-big-cat-tablet@1x.jpg 1x, images/index-slider-big-cat-tablet@2x.jpg 2x">
+          <img class="example__image" src="images/index-slider-big-cat-mobile@1x.jpg" srcset="images/index-slider-big-cat-mobile@2x.jpg" width="280" height="256" alt="Жирный кот">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-skinny-cat-tablet@1x.jpg 1x, images/index-slider-skinny-cat-tablet@2x.jpg 2x">
+          <img class="example__image" src="images/index-slider-skinny-cat-mobile@1x.jpg" srcset="images/index-slider-skinny-cat-mobile@2x.jpg" width="280" height="256" alt="Худой кот">
+        </picture>
       </div>
     </section>
 
@@ -107,6 +133,7 @@
         <p>ул. Большая Конюшенная, д. 19/8</p>
         <p>Санкт-Петербург</p>
       </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5652.872183549858!2d30.31937519473138!3d59.93890995106867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713989433416!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
   </main>
