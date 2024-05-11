@@ -1,0 +1,12 @@
+.logo-name {
+  display: block;
+}
+
+.logo-name:hover,
+.logo-name:focus {
+  opacity: 0.6;
+}
+
+.logo-name:active {
+  opacity: 0.3;
+}

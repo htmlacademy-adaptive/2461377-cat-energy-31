@@ -5,8 +5,9 @@
 .main-nav--show {
   display: block;
   position: absolute;
-  top: 66px;
+  top: 65px;
   left: 0;
+  right: 0;
 }
 
 .main-nav__list {
@@ -23,7 +24,7 @@
   }
 }
 
-.main-nav__item a {
+.main-nav__link {
   display: block;
   background-color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -38,11 +39,13 @@
   min-width: 320px;
 }
 
-.main-nav__item a:hover,
-.main-nav__item a:focus {
+.main-nav__link:hover,
+.main-nav__link:focus {
   color: #666666;
+  background-color: #ffffff;
 }
 
-.main-nav__item a:active {
+.main-nav__link:active {
+  background-color: #ffffff;
   color: #b3b3b3;
 }

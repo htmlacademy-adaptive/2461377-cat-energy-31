@@ -15,6 +15,17 @@
   min-width: 44px;
   min-height: 44px;
   background-color: transparent;
+  display: grid;
+}
+
+.main-header__open {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.main-header__close {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .main-header__button:hover,

@@ -1,13 +1,14 @@
 .contact {
   display: grid;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
 }
 
 .contact__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
   padding: 20px 26px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,4 +31,8 @@
 
 .contact__address p {
   margin: 0;
+}
+
+.contact__iframe {
+  margin: 0 auto;
 }
