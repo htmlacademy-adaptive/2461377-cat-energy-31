@@ -1,5 +1,9 @@
 .logo-name {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
 }
 
 .logo-name:hover,
