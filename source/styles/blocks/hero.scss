@@ -1,0 +1,31 @@
+.hero {
+  background-image:
+    url("../../images/index-hero-background-mobile@1x.png"),
+    linear-gradient(180deg, $bg-color-hero 302px, transparent 302px);
+  background-size: 320px 302px, 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero__text {
+  text-transform: uppercase;
+}
+
+.hero__link {
+  text-decoration: none;
+  padding: 10px 20px;
+}

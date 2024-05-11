@@ -1,0 +1,72 @@
+.subscription {
+  color: #000000;
+}
+
+.subscription__title {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 20px;
+  color: #000000;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 212px;
+    right: 0;
+    top: 10px;
+    background-color: $base-color-btn;
+
+  }
+}
+
+.subscription__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.subscription__text {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.subscription__input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 16px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  // Не работает как надо!!!
+  // &:invalid {
+  //   border: 2px solid #FF8282
+  // }
+}
+
+.subscription__button {
+  width: 100%;
+  padding: 15px 20px;
+}

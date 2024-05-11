@@ -1,0 +1,27 @@
+.main-header {
+  text-transform: uppercase;
+  padding: 13px 10px 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-header a {
+  text-decoration: none;
+}
+
+.main-header__button {
+  min-width: 44px;
+  min-height: 44px;
+  background-color: transparent;
+}
+
+.main-header__button:hover,
+.main-header__button:focus {
+  opacity: 0.6;
+}
+
+.main-header__button:active {
+  opacity: 0.3;
+}
