@@ -20,8 +20,10 @@
 .main-header__button:hover,
 .main-header__button:focus {
   opacity: 0.6;
+  background-color: transparent;
 }
 
 .main-header__button:active {
   opacity: 0.3;
+  background-color: transparent;
 }
