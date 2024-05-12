@@ -2,6 +2,11 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .faq__title {
@@ -12,6 +17,12 @@
   margin: 0;
   margin-bottom: 40px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .faq__desc-list {
@@ -21,12 +32,28 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  counter-reset: faq;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 79px;
+    row-gap: 37px;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 .faq__desc-item {
   padding-left: 80px;
   position: relative;
   min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 151px;
+    max-width: 245px;
+    padding-bottom: 57px;
+  }
 }
 
 .faq__desc-item::before {
@@ -40,6 +67,28 @@
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+}
+
+.faq__desc-item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 108px;
+    top: 0;
+    z-index: -1;
+    counter-increment: faq;
+    content: counter(faq) "";
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    color: #f2f2f2;
+  }
 }
 
 .faq__desc-item:nth-child(2)::before {

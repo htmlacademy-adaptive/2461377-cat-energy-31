@@ -3,6 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 23px;
+    max-width: 168px;
+  }
 }
 
 .htmlacademy__link {

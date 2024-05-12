@@ -11,7 +11,24 @@
   padding-right: 20px;
   padding-top: 27px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    background-image: none;
+    padding-left: 90px;
+    padding-top: 65px;
+    position: relative;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+  }
 }
 
 .hero__title {
@@ -19,13 +36,74 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 40px;
+    max-width: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .hero__text {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin-bottom: 3px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 266px;
+    left: 0;
+    z-index: -1;
+    padding-left: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .hero__link {
   text-decoration: none;
   padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
