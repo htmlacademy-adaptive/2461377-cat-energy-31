@@ -3,8 +3,13 @@
   padding: 20px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 77px 53px 53px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 77px 52px 59px;
+    max-width: 570px;
   }
 }
 
@@ -18,12 +23,19 @@
   background-color: $base-color-btn;
   border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     left: auto;
     right: 63px;
     top: 92px;
     width: 200px;
     height: 200px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 47px;
   }
 }
 
@@ -39,13 +51,21 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     left: auto;
     right: 93px;
     top: 92px;
     width: 140px;
     height: 194px;
     background-size: 140px 194px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 67px;
+    top: 41px;
+    background-size: 70px 97px;
   }
 }
 
@@ -62,13 +82,21 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     left: auto;
     right: 29px;
     top: 135px;
     width: 268px;
     height: 112px;
     background-size: 268px 112px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 134px;
+    height: 56px;
+    left: 33px;
+    top: 67px;
+    background-size: 134px 56px;
   }
 }
 
@@ -84,7 +112,7 @@
   padding-left: 70px;
   padding-top: 10px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     padding: 0;
     padding-right: 230px;
     font-family: "Oswald", sans-serif;
@@ -92,6 +120,12 @@
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 24px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 162px;
+    padding-right: 0;
+    margin-bottom: 73px;
   }
 }
 
@@ -101,7 +135,7 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -111,6 +145,11 @@
     padding-right: 270px;
     border: none;
     margin-bottom: 48px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-right: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -126,7 +165,7 @@
   align-items: center;
   max-width: 140px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     max-width: 200px;

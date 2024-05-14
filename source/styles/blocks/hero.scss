@@ -1,6 +1,9 @@
 .hero {
   background-image:
-    url("../../images/index-hero-background-mobile@1x.png"),
+    image-set(
+      url("../../images/index-hero-background-mobile@2x.png") 1x,
+      url("../../images/index-hero-background-mobile@1x.png") 2x
+    ),
     linear-gradient(180deg, $bg-color-hero 302px, transparent 302px);
   background-size: 320px 302px, 100%;
   background-repeat: no-repeat;
@@ -15,10 +18,6 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../images/index-hero-background-mobile@2x.png");
-  }
-
   @media (width >= $tablet-width) {
     color: $color-black;
     background-image: none;
@@ -30,7 +29,18 @@
   }
 
   @media (width >= $desktop-width) {
-    padding-top: 110px;
+    padding-top: 143px;
+    background-image:
+      image-set(
+        url("../../images/index-hero-background-desktop@2x.png") 1x,
+        url("../../images/index-hero-background-desktop@1x.png") 2x
+      ),
+      linear-gradient(90deg, $color-white 50%, $bg-color-hero 50%);
+    background-size: 1041px 694px, 100%;
+    background-repeat: no-repeat;
+    background-position: right, center;
+    min-height: 694px;
+    margin-bottom: 82px;
   }
 }
 
@@ -45,6 +55,7 @@
   @media (width >= $desktop-width) {
     margin: 0 auto;
     width: 1300px;
+    padding-top: 81px;
     padding-left: 120px;
     padding-right: 120px;
     position: relative;
@@ -97,18 +108,18 @@
     position: absolute;
     top: 266px;
     left: 0;
-    z-index: -1;
     padding-left: 30px;
     margin: 0;
+    z-index: -1;
   }
 
   @media (width >= $desktop-width) {
     position: absolute;
-    top: -81px;
+    top: 0;
     left: 487px;
-    z-index: -1;
     margin: 0;
     padding: 0;
+    z-index: 0;
   }
 }
 
@@ -126,36 +137,3 @@
   }
 }
 
-.hero__background {
-  display: none;
-
-  @media (width >= $desktop-width) {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    min-width: 720px;
-    height: 694px;
-    top: -118px;
-    left: 720px;
-    background-image: url("../../images/index-hero-background-desktop@1x.png");
-    background-color: #62a63b;
-    background-position: left;
-    background-size: contain;
-    z-index: -2;
-    outline: 2px dashed $red;
-  }
-
-  &::before {
-    @media (width >= $desktop-width) {
-      content: "";
-      position: absolute;
-      width: 100%;
-      min-width: 720px;
-      height: 694px;
-      top: 0;
-      left: 0;
-      background-color: #62a63b;
-      opacity: 0.85;
-    }
-  }
-}

@@ -5,10 +5,19 @@
   padding-right: 20px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 45px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 71px;
   }
 }
 
@@ -18,5 +27,14 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
+
+  @media (width >= $tablet-width) {
+    gap: 30px;
+  }
+
+
+  @media (width >= $desktop-width) {
+    gap: 80px;
+  }
 }
