@@ -38,7 +38,7 @@
       linear-gradient(90deg, $color-white 50%, $bg-color-hero 50%);
     background-size: 1041px 694px, 100%;
     background-repeat: no-repeat;
-    background-position: right, center;
+    background-position: calc(50% + 520px) bottom, center;
     min-height: 694px;
     margin-bottom: 82px;
   }

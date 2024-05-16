@@ -17,7 +17,7 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header main-header--index">
 
     <a class="logo-img" href="index.html">
       <picture>
@@ -126,48 +126,49 @@
     </section>
 
     <section class="example">
-      <div class="example_container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-          в день.</p>
-        <div class="example__inner">
-          <dl class="example__list">
-            <div class="example__wrapper">
-              <dt class="example__item">5 кг</dt>
-              <dd class="example__item-description">Снижение веса</dd>
-            </div>
-            <div class="example__wrapper">
-              <dt class="example__item">60 дней</dt>
-              <dd class="example__item-description">Затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="example__text-secondary">
-            Затраты на питание:
-            <span class="example__text-secondary-span">15 000 руб</span>
-          </p>
+      <div class="example__box">
+        <div class="example_container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+            в день.</p>
+          <div class="example__inner">
+            <dl class="example__list">
+              <div class="example__wrapper">
+                <dt class="example__item">5 кг</dt>
+                <dd class="example__item-description">Снижение веса</dd>
+              </div>
+              <div class="example__wrapper">
+                <dt class="example__item">60 дней</dt>
+                <dd class="example__item-description">Затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__text-secondary">
+              Затраты на питание:
+              <span class="example__text-secondary-span">15 000 руб</span>
+            </p>
+          </div>
+        </div>
+        <div class="example__slider slider">
+          <span class="visually-hidden">Слайдер с котиком</span>
+          <div class="slider__img slider__img--before">
+            <picture>
+              <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-big-cat-tablet@1x.png 1x, images/index-slider-big-cat-tablet@2x.png 2x">
+              <img class="slider__image" src="images/index-slider-big-cat-mobile@1x.png" srcset="images/index-slider-big-cat-mobile@2x.png" width="280" height="256" alt="Жирный кот">
+            </picture>
+          </div>
+          <div class="slider__img slider__img--after">
+            <picture>
+              <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-skinny-cat-tablet@1x.png 1x, images/index-slider-skinny-cat-tablet@2x.png 2x">
+              <img class="slider__image" src="images/index-slider-skinny-cat-mobile@1x.png" srcset="images/index-slider-skinny-cat-mobile@2x.png" width="280" height="256" alt="Худой кот">
+            </picture>
+          </div>
+          <button class="slider__button button" type="button">
+            <span class="visually-hidden">Кнопка слайдера</span>
+          </button>
+
         </div>
       </div>
-      <div class="example__slider slider">
-        <span class="visually-hidden">Слайдер с котиком</span>
-        <div class="slider__img slider__img--before">
-          <picture>
-            <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-big-cat-tablet@1x.png 1x, images/index-slider-big-cat-tablet@2x.png 2x">
-            <img class="slider__image" src="images/index-slider-big-cat-mobile@1x.png" srcset="images/index-slider-big-cat-mobile@2x.png" width="280" height="256" alt="Жирный кот">
-          </picture>
-        </div>
-        <div class="slider__img slider__img--after">
-          <picture>
-            <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-skinny-cat-tablet@1x.png 1x, images/index-slider-skinny-cat-tablet@2x.png 2x">
-            <img class="slider__image" src="images/index-slider-skinny-cat-mobile@1x.png" srcset="images/index-slider-skinny-cat-mobile@2x.png" width="280" height="256" alt="Худой кот">
-          </picture>
-        </div>
-        <button class="slider__button button" type="button">
-          <span class="visually-hidden">Кнопка слайдера</span>
-        </button>
-
-      </div>
-
     </section>
 
     <section class="contact">
@@ -179,7 +180,7 @@
         </address>
       </div>
       <div class="contact__iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5652.872183549858!2d30.31937519473138!3d59.93890995106867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713989433416!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5652.872183549858!2d30.31937519473138!3d59.93890995106867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713989433416!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </section>
@@ -187,34 +188,36 @@
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__link" href="index.html">
-      <picture>
-        <source media="(min-width: 768px)" type="image/svg+xml" width="128" height="24" srcset="images/logo-text.svg">
-        <img src="images/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
-      </picture>
-    </a>
-    <ul class="main-footer__list social-list">
-      <li class="social-list__item">
-        <a class="social-link social-link--vk" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-link social-link--youtube" href="#">
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-link social-link--telegram" href="#">
-          <span class="visually-hidden">Телеграмм</span>
-        </a>
-      </li>
-    </ul>
-    <div class="main-footer__htmlacademy htmlacademy">
-      <a class="htmlacademy__link" href="#">HTML Academy</a>
-      <a class="htmlacademy__logo" href="#">
-        <span class="visually-hidden">HTML Academy</span>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__link" href="index.html">
+        <picture>
+          <source media="(min-width: 768px)" type="image/svg+xml" width="128" height="24" srcset="images/logo-text.svg">
+          <img src="images/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
+        </picture>
       </a>
+      <ul class="main-footer__list social-list">
+        <li class="social-list__item">
+          <a class="social-link social-link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-link social-link--youtube" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-link social-link--telegram" href="#">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__htmlacademy htmlacademy">
+        <a class="htmlacademy__link" href="#">HTML Academy</a>
+        <a class="htmlacademy__logo" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
   <script>

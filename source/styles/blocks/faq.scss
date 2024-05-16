@@ -56,7 +56,9 @@
   }
 
   @media (width >= $desktop-width) {
+    width: 100%;
     max-width: 1300px;
+    padding-right: 0;
   }
 }
 

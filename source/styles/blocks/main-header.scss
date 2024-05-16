@@ -15,6 +15,11 @@
     padding: 55px 40px 0;
     width: 100%;
     max-width: 1300px;
+  }
+}
+
+.main-header--index {
+  @media (width >= $desktop-width) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
