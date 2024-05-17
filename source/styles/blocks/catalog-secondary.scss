@@ -1,31 +1,87 @@
 .catalog-secondary {
   margin-bottom: 40px;
+
+  @media (width >= $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+  }
 }
 
 .catalog-secondary__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+
+  @media (width >= $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
 }
 
 .catalog-secondary__title {
+  display: flex;
   font-family: "Oswald", sans-serif;
   margin: 0;
   margin-bottom: 36px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  padding-left: 20px;
+  padding-right: 40px;
   color: #000000;
   position: relative;
+  width: max-content;
+  background-color: $color-white;
+  box-shadow: -20px 0 0 $color-white;
+
+  @media (width >= $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    box-shadow: none;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    box-shadow: -40px 0 0 $color-white;
+  }
 
   &::after {
     position: absolute;
     content: "";
     height: 2px;
-    left: 286px;
+    width: 100vw;
     right: 0;
     top: 10px;
     background-color: $base-color-btn;
+    box-shadow: 100vw 0 0 $base-color-btn;
+    z-index: -1;
+
+    @media (width >= $tablet-width) {
+      top: 15px;
+    }
+
+    @media (width >= $desktop-width) {
+      top: 19px;
+    }
   }
 }
 
@@ -34,10 +90,24 @@
   padding: 0;
   list-style-type: none;
   margin-bottom: 35px;
+
+  @media (width >= $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog-secondary__item {
   border-top: 1px solid #cdcdcd;
+
+  @media (width >= $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (width >= $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
@@ -51,10 +121,37 @@
   background-color: #62a539;
   color: $color-white;
   text-align: center;
-  background-image: url("../../images/catalog-secondary-background-mobile@1x.png");
+  background-image:
+    image-set(
+      url("../../images/catalog-secondary-background-mobile@2x.png"),
+      url("../../images/catalog-secondary-background-mobile@1x.png")
+    );
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+
+  @media (width >= $tablet-width) {
+    padding: 71px 100px 69px 421px;
+    background-image:
+      image-set(
+        url("../../images/catalog-secondary-background-tablet@2x.png"),
+        url("../../images/catalog-secondary-background-tablet@1x.png")
+      );
+    background-size: cover;
+    text-align: left;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 185px 42px 43px;
+    background-image:
+      image-set(
+        url("../../images/catalog-secondary-background-desktop@2x.png"),
+        url("../../images/catalog-secondary-background-desktop@1x.png")
+      );
+    background-size: cover;
+    text-align: center;
+  }
 
   &::before {
     position: absolute;
@@ -67,5 +164,23 @@
     background-image: url("../../icons/stack.svg#gift");
     background-size: 78px 80px;
     background-repeat: no-repeat;
+
+    @media (width >= $tablet-width) {
+      width: 80px;
+      height: 82px;
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+      background-size: 80px 82px;
+    }
+
+    @media (width >= $desktop-width) {
+      width: 80px;
+      height: 83px;
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: 80px 83px;
+    }
   }
 }

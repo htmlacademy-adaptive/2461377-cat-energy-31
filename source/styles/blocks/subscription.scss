@@ -1,5 +1,23 @@
 .subscription {
   color: #000000;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (width >= $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 80px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 104px;
+  }
 }
 
 .subscription__title {
@@ -9,34 +27,73 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  padding-left: 20px;
+  padding-right: 40px;
   color: #000000;
   position: relative;
+  display: flex;
+  width: max-content;
+  background-color: $color-white;
+  box-shadow: -20px 0 0 $color-white;
+
+  @media (width >= $tablet-width) {
+    padding-right: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+    box-shadow: none;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+    box-shadow: -40px 0 0 $color-white;
+  }
 
   &::after {
     position: absolute;
     content: "";
     height: 2px;
-    left: 212px;
+    width: 100vw;
     right: 0;
     top: 10px;
     background-color: $base-color-btn;
-  }
-}
+    box-shadow: 100vw 0 0 $base-color-btn;
+    z-index: -1;
 
-.subscription__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
+    @media (width >= $tablet-width) {
+      top: 15px;
+    }
+
+    @media (width >= $desktop-width) {
+      top: 19px;
+    }
+  }
 }
 
 .subscription__text {
   margin: 0;
   margin-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (width >= $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscription__form {
+  @media (width >= $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscription__input {
@@ -49,6 +106,15 @@
   line-height: 30px;
   margin-bottom: 16px;
   outline: none;
+
+  @media (width >= $tablet-width) {
+    margin: 0;
+    width: 376px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 496px;
+  }
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -68,4 +134,9 @@
 .subscription__button {
   width: 100%;
   padding: 15px 20px;
+
+  @media (width >= $tablet-width) {
+    width: 256px;
+    padding: 15px;
+  }
 }

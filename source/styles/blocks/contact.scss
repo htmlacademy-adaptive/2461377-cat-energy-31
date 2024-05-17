@@ -2,6 +2,7 @@
   display: grid;
   margin: 0 auto;
   min-width: 320px;
+  background-color: #f2f2f2;
 
   @media (width >= $desktop-width) {
     width: 100%;
@@ -21,6 +22,9 @@
 
   @media (width >= $desktop-width) {
     position: absolute;
+
+    grid-template-columns: 160px 160px;
+    gap: 87px;
     background-color: $color-white;
     padding: 61px 80px;
     margin-top: 95px;

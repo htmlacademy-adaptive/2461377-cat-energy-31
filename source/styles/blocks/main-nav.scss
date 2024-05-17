@@ -67,35 +67,31 @@
   @media (width >= $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    background-color: transparent;
-    color: $color-white;
   }
-}
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-  color: #666666;
-  background-color: #ffffff;
 
-  @media (width >= $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    background-color: transparent;
-    color: $color-white;
-    opacity: 0.6;
+  &:hover,
+  &:focus {
+    color: #666666;
+    background-color: #ffffff;
+
+    @media (width >= $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.6;
+    }
   }
-}
 
-.main-nav__link:active {
-  background-color: #ffffff;
-  color: #b3b3b3;
 
-  @media (width >= $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    background-color: none;
-    color: $color-white;
-    opacity: 0.3;
+  &:active {
+    background-color: #ffffff;
+    color: #b3b3b3;
+
+    @media (width >= $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -113,10 +109,33 @@
     @media (width >= $tablet-width) {
       background-color: $base-color-btn;
     }
+  }
+}
 
+.main-nav--index .main-nav__link {
+  @media (width >= $desktop-width) {
+    background-color: inherit;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
     @media (width >= $desktop-width) {
-      background-color: $color-white;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    @media (width >= $desktop-width) {
+      opacity: 0.3;
     }
   }
 }
 
+.main-nav--index .main-nav__item--current {
+  &::before {
+    @media (width >= $tablet-width) {
+      background-color: $color-white;
+    }
+  }
+}
