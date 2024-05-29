@@ -71,9 +71,6 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1300px)" type="image/webp" width="552" height="499" srcset="images/index-hero-can-desktop@1x.webp 1x, images/index-hero-can-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/index-hero-can-tablet@1x.webp 1x, images/index-hero-can-tablet@2x.webp 2x">
-          <source type="image/webp" width="280" height="270" srcset="images/index-hero-can-mobile@1x.webp 1x, images/index-hero-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" type="image/png" width="552" height="499" srcset="images/index-hero-can-desktop@1x.png 1x, images/index-hero-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" type="image/png" width="709" height="609" srcset="images/index-hero-can-tablet@1x.png 1x, images/index-hero-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/index-hero-can-mobile@1x.png" srcset="images/index-hero-can-mobile@2x.png" width="280" height="270" alt="Банка корма с курицей">
@@ -229,8 +226,13 @@
       </div>
     </div>
   </footer>
-
-  <script src="scripts/index.js"></script>
+  <script>
+    function navToggle() {
+      document.getElementById("main-nav").classList.toggle("main-nav--show");
+      document.getElementById("button-open").classList.toggle("visually-hidden");
+      document.getElementById("button-close").classList.toggle("visually-hidden");
+    }
+  </script>
 </body>
 
 </html>

@@ -441,7 +441,13 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/index.js"></script>
+  <script>
+    function navToggle() {
+      document.getElementById("main-nav").classList.toggle("main-nav--show");
+      document.getElementById("button-open").classList.toggle("visually-hidden");
+      document.getElementById("button-close").classList.toggle("visually-hidden");
+    }
+  </script>
 </body>
 
 </html>
