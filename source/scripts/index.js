@@ -12,11 +12,11 @@ header.classList.remove('main-header--nojs');
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--show')) {
     navMain.classList.remove('main-nav--show');
-    buttonClose.classList.add('main-header__button--invisible');
-    buttonOpen.classList.remove('main-header__button--invisible');
+    buttonClose.classList.add('main-header__invisible');
+    buttonOpen.classList.remove('main-header__invisible');
   } else {
     navMain.classList.add('main-nav--show');
-    buttonClose.classList.remove('main-header__button--invisible');
-    buttonOpen.classList.add('main-header__button--invisible');
+    buttonClose.classList.remove('main-header__invisible');
+    buttonOpen.classList.add('main-header__invisible');
   }
 });
