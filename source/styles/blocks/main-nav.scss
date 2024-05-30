@@ -27,6 +27,13 @@
     gap: 33px;
     background-color: inherit;
   }
+
+  @media (width >= $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    row-gap: 1px;
+  }
 }
 
 .main-nav__item {
