@@ -35,6 +35,7 @@
 
 
   @media (width >= $desktop-width) {
-    gap: 80px;
+    min-width: 1220px;
+    justify-content: space-between;
   }
 }

@@ -13,16 +13,19 @@
   top: 65px;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: $color-white;
 
   @media (width >= $tablet-width) {
     display: flex;
     gap: 33px;
+    background-color: inherit;
   }
 }
 
@@ -52,8 +55,7 @@
   color: #000000;
   text-decoration: none;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 10px;
   min-width: 320px;
 
   @media (width >= $tablet-width) {

@@ -50,6 +50,10 @@
     gap: 60px;
   }
 
+  @media (width >= 769px) {
+    justify-content: space-around;
+  }
+
   @media (width >= $desktop-width) {
     gap: 80px;
   }
