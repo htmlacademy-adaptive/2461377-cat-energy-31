@@ -34,7 +34,7 @@
 
 .catalog-secondary__title {
   display: flex;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
   margin: 0;
   margin-bottom: 36px;
   font-size: 24px;
@@ -123,10 +123,8 @@
   text-align: center;
   background-image:
     image-set(
-      url("../../images/catalog-secondary-background-mobile@2x.webp") 2x,
-      url("../../images/catalog-secondary-background-mobile@1x.webp") 1x,
-      url("../../images/catalog-secondary-background-mobile@2x.png") 2x,
-      url("../../images/catalog-secondary-background-mobile@1x.png") 1x
+      url("../../images/catalog-secondary-background-mobile@2x.png"),
+      url("../../images/catalog-secondary-background-mobile@1x.png")
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,10 +135,8 @@
     padding: 71px 100px 69px 421px;
     background-image:
       image-set(
-        url("../../images/catalog-secondary-background-tablet@2x.webp") 2x,
-        url("../../images/catalog-secondary-background-tablet@1x.webp") 1x,
-        url("../../images/catalog-secondary-background-tablet@2x.png") 2x,
-        url("../../images/catalog-secondary-background-tablet@1x.png") 1x
+        url("../../images/catalog-secondary-background-tablet@2x.png"),
+        url("../../images/catalog-secondary-background-tablet@1x.png")
       );
     background-size: cover;
     text-align: left;
@@ -150,10 +146,8 @@
     padding: 185px 42px 43px;
     background-image:
       image-set(
-        url("../../images/catalog-secondary-background-desktop@2x.webp") 2x,
-        url("../../images/catalog-secondary-background-desktop@1x.webp") 1x,
-        url("../../images/catalog-secondary-background-desktop@2x.png") 2x,
-        url("../../images/catalog-secondary-background-desktop@1x.png") 1x
+        url("../../images/catalog-secondary-background-desktop@2x.png"),
+        url("../../images/catalog-secondary-background-desktop@1x.png")
       );
     background-size: cover;
     text-align: center;

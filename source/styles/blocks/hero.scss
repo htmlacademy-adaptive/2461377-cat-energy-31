@@ -1,16 +1,14 @@
 .hero {
   background-image:
     image-set(
-      url("../../images/index-hero-background-mobile@2x.webp") 2x,
-      url("../../images/index-hero-background-mobile@1x.webp") 1x,
-      url("../../images/index-hero-background-mobile@2x.png") 2x,
-      url("../../images/index-hero-background-mobile@1x.png") 1x
+      url("../../images/index-hero-background-mobile@2x.png") 1x,
+      url("../../images/index-hero-background-mobile@1x.png") 2x
     ),
-    linear-gradient(360deg, transparent 182px, $bg-color-hero 182px);
+    linear-gradient(180deg, $bg-color-hero 302px, transparent 302px);
   background-size: 320px 302px, 100%;
   background-repeat: no-repeat;
   background-position: top center;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
@@ -34,10 +32,8 @@
     padding-top: 143px;
     background-image:
       image-set(
-        url("../../images/index-hero-background-desktop@2x.webp") 2x,
-        url("../../images/index-hero-background-desktop@1x.webp") 1x,
-        url("../../images/index-hero-background-desktop@2x.png") 2x,
-        url("../../images/index-hero-background-desktop@1x.png") 1x
+        url("../../images/index-hero-background-desktop@2x.png") 1x,
+        url("../../images/index-hero-background-desktop@1x.png") 2x
       ),
       linear-gradient(90deg, $color-white 50%, $bg-color-hero 50%);
     background-size: 1041px 694px, 100%;
@@ -72,10 +68,9 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
-  max-width: 400px;
 
   @media (width >= $tablet-width) {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -91,7 +86,7 @@
   margin-bottom: 29px;
 
   @media (width >= $tablet-width) {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;

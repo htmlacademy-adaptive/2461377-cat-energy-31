@@ -39,7 +39,7 @@
         <span class="button-open__line"></span>
         <span class="button-open__line"></span>
       </span>
-      <span class="main-header__close button-close main-header__button--invisible" id="button-close">
+      <span class="main-header__close button-close visually-hidden" id="button-close">
         <span class="button-close__line"></span>
         <span class="button-close__line"></span>
         <span class="visually-hidden">Закрыть</span>
@@ -113,7 +113,12 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/index.js">
+  <script>
+    function navToggle() {
+      document.getElementById("main-nav").classList.toggle("main-nav--show");
+      document.getElementById("button-open").classList.toggle("visually-hidden");
+      document.getElementById("button-close").classList.toggle("visually-hidden");
+    }
   </script>
 </body>
 

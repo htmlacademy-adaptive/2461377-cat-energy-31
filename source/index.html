@@ -9,8 +9,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/styles.css">
@@ -41,7 +39,7 @@
         <span class="button-open__line"></span>
         <span class="button-open__line"></span>
       </span>
-      <span class="main-header__close button-close main-header__button--invisible" id="button-close">
+      <span class="main-header__close button-close visually-hidden" id="button-close">
         <span class="button-close__line"></span>
         <span class="button-close__line"></span>
         <span class="visually-hidden">Закрыть</span>
@@ -71,14 +69,11 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1300px)" type="image/webp" width="552" height="499" srcset="images/index-hero-can-desktop@1x.webp 1x, images/index-hero-can-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/index-hero-can-tablet@1x.webp 1x, images/index-hero-can-tablet@2x.webp 2x">
-          <source type="image/webp" width="280" height="270" srcset="images/index-hero-can-mobile@1x.webp 1x, images/index-hero-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" type="image/png" width="552" height="499" srcset="images/index-hero-can-desktop@1x.png 1x, images/index-hero-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" type="image/png" width="709" height="609" srcset="images/index-hero-can-tablet@1x.png 1x, images/index-hero-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/index-hero-can-mobile@1x.png" srcset="images/index-hero-can-mobile@2x.png" width="280" height="270" alt="Банка корма с курицей">
         </picture>
-        <a class="hero__link button" href="order-form.html">Подобрать программу</a>
+        <a class="hero__link button" href="#">Подобрать программу</a>
       </div>
     </section>
 
@@ -90,7 +85,7 @@
             <h2 class="card-offer__title">Похудение</h2>
             <p class="card-offer__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="card-offer__link" href="catalog-slim.html">
+            <a class="card-offer__link" href="#">
               Каталог slim
               <span class="card-offer__link-inner">
                 <span class="card-offer__link-arrow"></span>
@@ -103,7 +98,7 @@
             <h2 class="card-offer__title">Набор массы</h2>
             <p class="card-offer__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="card-offer__link" href="catalog-pro.html">
+            <a class="card-offer__link" href="#">
               Каталог pro
               <span class="card-offer__link-inner">
                 <span class="card-offer__link-arrow"></span>
@@ -158,16 +153,12 @@
           <span class="visually-hidden">Слайдер с котиком</span>
           <div class="slider__img slider__img--before">
             <picture>
-              <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/index-slider-big-cat-tablet@1x.webp 1x,images/index-slider-big-cat-tablet@2x.webp 2x">
-              <source type="image/webp" width="280" height="256" srcset="images/index-slider-big-cat-mobile@1x.webp 1x, images/index-slider-big-cat-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-big-cat-tablet@1x.png 1x, images/index-slider-big-cat-tablet@2x.png 2x">
               <img class="slider__image" src="images/index-slider-big-cat-mobile@1x.png" srcset="images/index-slider-big-cat-mobile@2x.png" width="280" height="256" alt="Жирный кот">
             </picture>
           </div>
           <div class="slider__img slider__img--after">
             <picture>
-              <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/index-slider-skinny-cat-tablet@1x.webp 1x,images/index-slider-skinny-cat-tablet@2x.webp 2x">
-              <source type="image/webp" width="280" height="256" srcset="images/images/index-slider-skinny-cat-mobile@1x.webp 1x, images/index-slider-skinny-cat-mobile@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-slider-skinny-cat-tablet@1x.png 1x, images/index-slider-skinny-cat-tablet@2x.png 2x">
               <img class="slider__image" src="images/index-slider-skinny-cat-mobile@1x.png" srcset="images/index-slider-skinny-cat-mobile@2x.png" width="280" height="256" alt="Худой кот">
             </picture>
@@ -222,15 +213,20 @@
         </li>
       </ul>
       <div class="main-footer__htmlacademy htmlacademy">
-        <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="htmlacademy__link" href="#">HTML Academy</a>
+        <a class="htmlacademy__logo" href="#">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </div>
   </footer>
-
-  <script src="scripts/index.js"></script>
+  <script>
+    function navToggle() {
+      document.getElementById("main-nav").classList.toggle("main-nav--show");
+      document.getElementById("button-open").classList.toggle("visually-hidden");
+      document.getElementById("button-close").classList.toggle("visually-hidden");
+    }
+  </script>
 </body>
 
 </html>
