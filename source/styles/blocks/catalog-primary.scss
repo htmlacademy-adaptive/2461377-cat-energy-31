@@ -44,17 +44,23 @@
   list-style-type: none;
 
   @media (width >= $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-items: center;
+  }
+
+  @media (width >= 1150px) {
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
   }
 
-  @media (width >= 769px) {
-    justify-content: space-around;
-  }
-
   @media (width >= $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
 }

@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   left: 20px;
-  top: 21px;
+  top: 24px;
   width: 50px;
   height: 50px;
   background-color: $base-color-btn;
@@ -37,6 +37,11 @@
     left: 52px;
     top: 47px;
   }
+}
+
+.card-offer--pro::before {
+  left: 21px;
+  top: 25px;
 }
 
 .card-offer::after {
@@ -73,8 +78,8 @@
 .card-offer--pro::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 21px;
+  left: 12px;
+  top: 25px;
   min-width: 67px;
   min-height: 50px;
   background-image: url("../../icons/stack.svg#cat-pro");
@@ -108,7 +113,7 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 29px;
   padding-left: 70px;
   padding-top: 10px;
 
@@ -130,13 +135,13 @@
 }
 
 .card-offer__text {
+  font-family: "Lato", "Arial", sans-serif;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (width >= $tablet-width) {
-    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -175,7 +180,7 @@
 .card-offer__link-inner {
   width: 32px;
   height: 12px;
-  margin-left: 15px;
+  margin-left: 16px;
   position: relative;
   overflow: hidden;
 }

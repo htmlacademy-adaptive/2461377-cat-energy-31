@@ -4,6 +4,7 @@
   @media (width >= $tablet-width) {
     display: flex;
     margin-left: auto;
+    margin-right: 5px;
   }
 }
 
@@ -16,6 +17,12 @@
   z-index: 10;
 }
 
+.main-nav--nojs {
+  display: block;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -25,6 +32,7 @@
   @media (width >= $tablet-width) {
     display: flex;
     background-color: inherit;
+    gap: 33px;
   }
 
   @media (width >= $desktop-width) {
@@ -68,8 +76,7 @@
     min-width: 65px;
     font-size: 18px;
     line-height: 24px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding: 14px 0;
   }
 
   @media (width >= $desktop-width) {
@@ -111,7 +118,7 @@
     content: "";
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 4px;
     height: 2px;
 
     @media (width >= $tablet-width) {
@@ -142,7 +149,7 @@
 
 .main-nav--index .main-nav__item--current {
   &::before {
-    @media (width >= $tablet-width) {
+    @media (width >= $desktop-width) {
       background-color: $color-white;
     }
   }

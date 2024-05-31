@@ -6,10 +6,10 @@
       url("../../images/index-hero-background-mobile@2x.png") 2x,
       url("../../images/index-hero-background-mobile@1x.png") 1x
     ),
-    linear-gradient(360deg, transparent 182px, $bg-color-hero 182px);
+    linear-gradient(360deg, transparent 178px, $bg-color-hero 178px);
   background-size: 320px 302px, 100%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom 178px center, top center;
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
   padding-left: 20px;
@@ -25,7 +25,7 @@
     background-image: none;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 65px;
+    padding-top: 63px;
     position: relative;
     margin-bottom: 526px;
   }
@@ -54,6 +54,11 @@
 
   @media (width < $tablet-width) {
     margin: 0 auto;
+    padding-left: 80px;
+  }
+
+  @media (width >= $tablet-width) {
+    padding-left: 80px;
   }
 
   @media (width >= $desktop-width) {
@@ -87,13 +92,16 @@
 
 .hero__text {
   text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 35px;
+  max-width: 400px;
 
   @media (width >= $tablet-width) {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
     text-align: left;
     margin-bottom: 50px;
@@ -106,8 +114,7 @@
 
 .hero__image {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 3px;
+  margin: -7px auto 3px;
 
   @media (width >= $tablet-width) {
     position: absolute;
@@ -134,6 +141,9 @@
 
   @media (width >= $tablet-width) {
     max-width: 244px;
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 54px;
   }
 
   @media (width >= $desktop-width) {

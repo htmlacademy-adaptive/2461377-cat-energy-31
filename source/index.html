@@ -18,37 +18,35 @@
 </head>
 
 <body>
-
-  <header class="main-header main-header--index">
-
-    <a class="logo-img" href="index.html">
+  <header class="main-header main-header--index main-header--nojs">
+    <a class="main-header__logo-img" href="index.html">
       <picture>
         <source media="(min-width: 1300px)" type="image/svg+xml" width="70" height="59" srcset="images/logo-desktop-img.svg">
         <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/logo-tablet-img.svg">
         <img src="images/logo-mobile-img.svg" width="33" height="38" alt="Логотип">
       </picture>
     </a>
-    <a class="logo-name" href="index.html">
+    <a class="main-header__logo-name" href="index.html">
       <picture>
         <source media="(min-width: 1300px)" type="image/svg+xml" width="118" height="21" srcset="images/logo-text.svg">
         <img src="images/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
       </picture>
     </a>
-    <button class="main-header__button button" type="button" onclick="navToggle()">
-      <span class="main-header__open button-open" id="button-open">
+    <button class="main-header__button button" type="button">
+      <span class="main-header__open button-open main-header__invisible">
         <span class="visually-hidden">Меню</span>
         <span class="button-open__line"></span>
         <span class="button-open__line"></span>
         <span class="button-open__line"></span>
       </span>
-      <span class="main-header__close button-close main-header__invisible" id="button-close">
+      <span class="main-header__close button-close main-header__invisible">
         <span class="button-close__line"></span>
         <span class="button-close__line"></span>
         <span class="visually-hidden">Закрыть</span>
       </span>
     </button>
 
-    <nav class="main-nav main-nav--index" id="main-nav">
+    <nav class="main-nav main-nav--index main-nav--nojs" id="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
           <a class="main-nav__link button" href="index.html">Главная</a>
@@ -182,7 +180,7 @@
 
     <section class="contact">
       <div class="contact__wrapper">
-        <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <h3 class="contact__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
         <address class="contact__address">
           <p>ул. Большая Конюшенная, д. 19/8</p>
           <p>Санкт-Петербург</p>
@@ -201,7 +199,7 @@
       <a class="main-footer__link" href="index.html">
         <picture>
           <source media="(min-width: 768px)" type="image/svg+xml" width="128" height="24" srcset="images/logo-text.svg">
-          <img src="images/logo-text.svg" width="101" height="18" alt="CAT ENERGY">
+          <img src="images/logo-text.svg" width="128" height="24" alt="CAT ENERGY">
         </picture>
       </a>
       <ul class="main-footer__list social-list">
@@ -229,7 +227,6 @@
       </div>
     </div>
   </footer>
-
   <script src="scripts/index.js"></script>
 </body>
 
