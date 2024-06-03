@@ -24,7 +24,7 @@
   }
 
   @media (width >= $desktop-width) {
-    padding: 0 0 75px;
+    padding: 0 40px 75px;
     width: 100%;
     max-width: 1300px;
     display: flex;
@@ -71,6 +71,7 @@
 
   @media (width >= $desktop-width) {
     margin-bottom: 69px;
+    min-width: 450px;
   }
 }
 
@@ -100,6 +101,7 @@
 
   @media (width >= $tablet-width) {
     margin: 0;
+    gap: 43px;
   }
 
   @media (width >= $desktop-width) {
@@ -130,6 +132,9 @@
   @media (width >= $tablet-width) {
     padding: 15px 20px 20px;
     min-width: 162px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
   }
 }
 
@@ -156,6 +161,7 @@
     width: max-content;
     padding-left: 9px;
     padding-right: 9px;
+    bottom: 3px;
     background-color: $color-white;
   }
 

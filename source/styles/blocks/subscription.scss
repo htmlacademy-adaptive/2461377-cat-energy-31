@@ -7,7 +7,7 @@
   @media (width >= $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 74px;
   }
 
   @media (width >= $desktop-width) {
@@ -36,6 +36,7 @@
   box-shadow: -20px 0 0 $color-white;
 
   @media (width >= $tablet-width) {
+    padding-left: 40px;
     padding-right: 40px;
     font-size: 32px;
     line-height: 32px;
@@ -67,7 +68,7 @@
     }
 
     @media (width >= $desktop-width) {
-      top: 19px;
+      top: 18px;
     }
   }
 }
@@ -104,7 +105,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   outline: none;
 
   @media (width >= $tablet-width) {
@@ -134,6 +135,8 @@
 .subscription__button {
   width: 100%;
   padding: 15px 20px;
+  font-size: 20px;
+  line-height: 26px;
 
   @media (width >= $tablet-width) {
     width: 256px;

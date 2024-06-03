@@ -54,7 +54,6 @@
 
   @media (width < $tablet-width) {
     margin: 0 auto;
-    padding-left: 80px;
   }
 
   @media (width >= $tablet-width) {
@@ -147,7 +146,7 @@
   }
 
   @media (width >= $desktop-width) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

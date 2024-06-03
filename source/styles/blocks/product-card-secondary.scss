@@ -15,7 +15,8 @@
 
   @media (width >= $desktop-width) {
     grid-template-columns: 325px 243px 82px 244px;
-    padding: 15px 0 17px;
+    padding: 14px 0 17px;
+    align-items: center;
   }
 }
 
@@ -29,13 +30,18 @@
   font-weight: 400;
   line-height: 16px;
   color: #222222;
+  text-transform: uppercase;
 
   @media (width >= $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+  }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -64,7 +70,7 @@
   grid-column: 3 / 5;
   grid-row: 2 / 3;
   text-align: right;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (width >= $tablet-width) {
     grid-column: 3 / 4;
@@ -76,6 +82,7 @@
   @media (width >= $desktop-width) {
     grid-column: 3 / 4;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 

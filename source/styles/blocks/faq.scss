@@ -6,6 +6,7 @@
   @media (width >= $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 46px;
   }
 
   @media (width >= $desktop-width) {
@@ -34,7 +35,7 @@
   }
 
   @media (width >= $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 31px;
   }
 }
 
@@ -73,6 +74,8 @@
     padding-top: 151px;
     max-width: 245px;
     padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -99,7 +102,7 @@
 .faq__desc-item::after {
   @media (width >= $tablet-width) {
     position: absolute;
-    left: 108px;
+    left: 115px;
     top: 0;
     z-index: -1;
     counter-increment: faq;
