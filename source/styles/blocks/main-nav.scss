@@ -1,0 +1,163 @@
+.main-nav {
+  display: none;
+
+  @media (width >= $tablet-width) {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}
+
+.main-nav--show {
+  display: block;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.main-nav--nojs {
+  display: block;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: $color-white;
+
+  @media (width >= $tablet-width) {
+    display: flex;
+    background-color: inherit;
+    gap: 33px;
+  }
+
+  @media (width >= $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    row-gap: 1px;
+  }
+
+  @media (width >= $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    row-gap: 1px;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (width >= $tablet-width) {
+    border: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  background-color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  padding: 22px 10px;
+  min-width: 320px;
+
+  @media (width >= $tablet-width) {
+    min-width: 65px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 0;
+  }
+
+  @media (width >= $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  &:hover,
+  &:focus {
+    color: #666666;
+    background-color: #ffffff;
+
+    @media (width >= $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.6;
+    }
+  }
+
+
+  &:active {
+    background-color: #ffffff;
+    color: #b3b3b3;
+
+    @media (width >= $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item--current {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    height: 2px;
+
+    @media (width >= $tablet-width) {
+      background-color: $base-color-btn;
+    }
+  }
+}
+
+.main-nav--index .main-nav__link {
+  @media (width >= $desktop-width) {
+    background-color: inherit;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    @media (width >= $desktop-width) {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    @media (width >= $desktop-width) {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav--index .main-nav__item--current {
+  &::before {
+    @media (width >= $desktop-width) {
+      background-color: $color-white;
+    }
+  }
+}
