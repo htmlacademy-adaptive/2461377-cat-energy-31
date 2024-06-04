@@ -59,6 +59,10 @@
     gap: 60px;
   }
 
+  @media (width >= 769px) {
+    justify-content: space-around;
+  }
+
   @media (width >= $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;

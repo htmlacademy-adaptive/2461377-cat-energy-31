@@ -9,6 +9,7 @@ const buttonClose = document.querySelector('.main-header__close');
 buttonOpen.classList.remove('main-header__invisible');
 navMain.classList.remove('main-nav--nojs');
 
+
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--show')) {
     navMain.classList.remove('main-nav--show');
