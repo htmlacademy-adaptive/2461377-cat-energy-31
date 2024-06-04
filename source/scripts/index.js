@@ -3,11 +3,12 @@
 
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-header__button');
-const header = document.querySelector('.main-header');
 const buttonOpen = document.querySelector('.main-header__open');
 const buttonClose = document.querySelector('.main-header__close');
 
-header.classList.remove('main-header--nojs');
+buttonOpen.classList.remove('main-header__invisible');
+navMain.classList.remove('main-nav--nojs');
+
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-nav--show')) {
