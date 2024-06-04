@@ -126,10 +126,19 @@
     border: 2px solid #444444;
   }
 
-  // Не работает как надо!!!
-  // &:invalid {
-  //   border: 2px solid #FF8282
-  // }
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.subscription__input--error {
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }
 
 .subscription__button {

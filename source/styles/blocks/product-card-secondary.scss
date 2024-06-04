@@ -90,6 +90,7 @@
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   padding: 10px 20px;
+  text-decoration: none;
 
   @media (width >= $tablet-width) {
     grid-row: 2 / 3;
