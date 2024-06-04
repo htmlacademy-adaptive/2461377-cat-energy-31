@@ -1,0 +1,219 @@
+.card-offer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+
+  @media (width >= $tablet-width) {
+    padding: 78px 53px 55px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 77px 52px 59px;
+    max-width: 570px;
+  }
+}
+
+.card-offer::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: $base-color-btn;
+  border-radius: 50%;
+
+  @media (width >= $tablet-width) {
+    left: auto;
+    right: 63px;
+    top: 92px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 47px;
+  }
+}
+
+.card-offer--pro::before {
+  left: 21px;
+  top: 25px;
+
+  @media (width >= $tablet-width) {
+    left: 445px;
+    top: 95px;
+  }
+
+  @media (width >= $desktop-width) {
+    left: 52px;
+    top: 47px;
+  }
+}
+
+.card-offer::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 21px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (width >= $tablet-width) {
+    left: auto;
+    right: 93px;
+    top: 81px;
+    width: 140px;
+    height: 194px;
+    background-size: 140px 194px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 67px;
+    top: 41px;
+    background-size: 70px 97px;
+  }
+}
+
+
+.card-offer--pro::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 25px;
+  min-width: 67px;
+  min-height: 50px;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (width >= $tablet-width) {
+    left: auto;
+    right: 29px;
+    top: 137px;
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+  }
+
+  @media (width >= $desktop-width) {
+    width: 134px;
+    height: 56px;
+    left: 33px;
+    top: 67px;
+    background-size: 134px 56px;
+  }
+}
+
+.card-offer__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
+  padding-top: 10px;
+
+  @media (width >= $tablet-width) {
+    padding: 0;
+    padding-right: 230px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 162px;
+    padding-right: 0;
+    margin-bottom: 73px;
+  }
+}
+
+.card-offer__text {
+  font-family: "Lato", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (width >= $tablet-width) {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 0;
+    padding-right: 260px;
+    border: none;
+    margin-bottom: 52px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-right: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.card-offer__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  max-width: 140px;
+
+  @media (width >= $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 200px;
+  }
+}
+
+.card-offer__link-inner {
+  width: 32px;
+  height: 12px;
+  margin-left: 16px;
+  position: relative;
+  overflow: hidden;
+
+  @media (width >= $tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.card-offer__link-arrow {
+  position: absolute;
+  right: 8px;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../icons/stack.svg#arrow");
+
+  transition: transform 0.3s ease;
+}
+
+.card-offer__link:hover .card-offer__link-arrow {
+  transform: translateX(8px);
+}
+
+.card-offer__link:active {
+  opacity: 0.3;
+}

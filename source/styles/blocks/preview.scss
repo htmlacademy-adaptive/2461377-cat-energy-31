@@ -1,0 +1,41 @@
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 22px;
+
+  @media (width >= $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 47px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
+}
+
+.preview__card-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (width >= $tablet-width) {
+    gap: 30px;
+  }
+
+
+  @media (width >= $desktop-width) {
+    min-width: 1220px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  background-color: $base-color-btn;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: $base-hover-color-btn;
+}
+
+.button:active {
+  background-color: $base-hover-color-btn;
+  color: $base-action-color-btn-text;
+}

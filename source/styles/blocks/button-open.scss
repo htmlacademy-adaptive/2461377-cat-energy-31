@@ -1,0 +1,19 @@
+.button-open {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 24px;
+  height: 20px;
+}
+
+.button-open__line {
+  width: 24px;
+  height: 2px;
+  background-color: $color-black;
+  margin-bottom: 6px;
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
