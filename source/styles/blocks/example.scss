@@ -33,7 +33,7 @@
   }
 }
 
-.example_container {
+.example__container {
   @media (width >= $desktop-width) {
     max-width: 450px;
   }
@@ -147,6 +147,7 @@
   text-transform: lowercase;
   position: absolute;
   width: fit-content;
+  max-width: 150px;
   background-color: #eaeaea;
   bottom: 0;
   left: 50%;
